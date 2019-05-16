@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://misterspex.github.io/ProViz",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d bundle"
   },
   "author": "andre neubauer (@devpg)",
   "license": "ISC",
@@ -13,13 +16,14 @@
     "@material-ui/core": "^3.3.1",
     "@material-ui/icons": "^3.0.1",
     "@material-ui/lab": "^3.0.0-alpha.23",
+    "gh-pages": "^2.0.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-router-dom": "^4.3.1",
     "typeface-roboto": "0.0.54",
     "universal-cookie": "^3.0.4",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
