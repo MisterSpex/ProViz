@@ -43,7 +43,7 @@ function MsxProductPictureGrid(props) {
     tileData = cleanedSkuInput.split('\n').map(line => {
       const items = line.split('\t');
       const sku = parseInt(items[0],10);
-      const name = items[2];
+      const name = items[1];
       return {
         img: 'https://d26hhearhq0yio.cloudfront.net/content/misterspex/produkte/grafiken/' + sku + '_a3.jpg',
         title: name,
